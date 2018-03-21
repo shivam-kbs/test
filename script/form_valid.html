@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>conditions</title>
+<script>
+function validateForm() {
+    var x = document.getElementById("fname").value;
+    if (x == "") {
+        alert("Name must be filled out");
+        return false;
+    }
+}
+
+</script>
+</head>
+<body>
+
+<form name="myForm" action="/action_page.php"
+onsubmit="return validateForm()" method="post">
+
+Name: <input type="text" name="fname" id = 'fname'>
+<input type="submit" value="Submit">
+</form>
+
+</body>
+</html>

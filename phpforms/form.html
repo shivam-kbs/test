@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>form</title>
+	<p id="demo"></p>
+	<script type="text/javascript">
+		function calc()
+		{
+			var avrage=0,result="",grade="";
+		
+
+			var m51= document.form1.python.value;
+			var m501= parseInt(m51);
+			
+			var m52= (document.form1.web_tech.value);
+			var m502= parseInt(m52);
+
+			var m53= (document.form1.inter_intera.value);
+			var m503= parseInt(m53);
+
+			var m54= (document.form1.big_data.value);
+			var m504= parseInt(m54);
+
+			var m55=(document.form1.soft_mange.value);
+			var m505= parseInt(m55);
+
+			var grand_total = (m501 + m502 + m503 + m504 + m505); 
+
+		   
+			avrage=grand_total/5;
+
+				if(m501 <35 || m502 <35 || m503 <35 || m504 <35 || m505 <35)
+				{
+					result= "fail";
+					grade="D";
+				}
+				 else if (avrage >= 80) {
+				 	result= "DISTINCTION";
+				 	grade= "A+";
+				 }
+				  else if (avrage >= 70 && avrage< 80) {
+				 	result= "FIRST position";
+				 	grade= "A";
+				 }
+				  else if (avrage >= 60 && avrage< 70) {
+				 	result= "second position";
+				 	grade= "B+";
+				 }
+				  else if (avrage >= 50 && avrage< 60) {
+				 	result= "THIRD position";
+				 	grade= "B";
+				 }
+				   else if (avrage >= 35 && avrage< 50) {
+				 	result= "paas";
+				 	grade= "c";
+				 }
+				  else if (avrage > 35 ) {
+				 	result= "fail";
+				 	grade= "no grade";
+				 }
+				  	document.form1.result.value = result;
+				  	document.form1.grand_total.value = grand_total;
+				  	document.form1.avrage.value = avrage;
+				  	document.form1.grade.value = grade;		
+		}
+	</script>
+</head>
+<body>
+	<form name="form1" action="form.php" method="post">
+		<table border="1" align="center">
+			<tr>
+				<td>Roll No.<span style="color: red">*</span></td>
+				<td><input type="text" name="roll_no" id="roll_no" placeholder="ROLL NO."></td>
+			</tr>
+			<tr>
+				<td>Name<span style="color: red">*</span></td>
+				<td><input type="text" name="name" id="name" placeholder="NAME"></td>
+			</tr>
+			<tr>
+				<td>Father Name<span style="color: red">*</span></td>
+				<td><input type="text" name="f_name" id="f_name" placeholder="Father NAME"></td>
+			</tr>
+			<tr>
+				<td>Mother Name<span style="color: red">*</span></td>
+				<td><input type="text" name="m_name" id="m_name" placeholder="MOTHER NAME"></td>
+			</tr>
+			<tr>
+				<td colspan="2" align="center"><b>SUBJECT MARKS</b></td>
+			</tr>
+			<tr>
+				<td>python</td>
+				<td><input type="text" name="python" id="python"></td>
+			</tr>
+			<tr>
+				<td>Web Tech.</td>
+				<td><input type="text" name="web_tech" id="web_tech"></td>
+			</tr>
+			<tr>
+				<td>Internet&Intranet</td>
+				<td><input type="text" name="inter_intera" id="inter_intera"></td>
+			</tr>
+			<tr>
+				<td>Big Data</td>
+				<td><input type="text" name="big_data" id="big_data"></td>
+			</tr>
+			<tr>
+				<td>Software Management</td>
+				<td><input type="sm" name="soft_mange" id="soft_mange"></td>
+			</tr>
+				<td colspan="2" align="center"><input type="button" onclick= "calc();" value="CALCULTE RESULT" /></td>
+			<tr>
+				<td>GRAND TOTAL</td>
+				<td><input type="num" name="grand_total" id="grand_total" ></td>
+			</tr>
+			<tr>
+				<td>RESULT</td>
+				<td><input type="num" name="result" id="result"></td>
+			</tr>
+			<tr>
+				<td>AVRAGE</td>
+				<td><input type="num" name="avrage" id="avrage"></td>
+			</tr>
+			<tr>
+				<td>GRADE</td>
+				<td><input type="num" name="grade" id="grade"></td>
+			</tr>
+
+			<td colspan="2" align="center"><input type="submit"  value="SUBMIT RESULT" /></td>
+
+		</table>
+	</form>
+
+</body>
+</html>

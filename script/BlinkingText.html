@@ -1,0 +1,28 @@
+<html>
+<head>
+<script type="text/javascript">
+function change()
+{
+	index=0;
+	if(index<1)
+	{
+		document.f1.t1.fgColor="black";
+		index++;
+	}
+	else
+	{
+		document.f1.t1.fgColor="white";
+		index=0;
+	}
+	//alert("dd");
+	setInterval(change,1000);	
+}
+</script>
+</head>
+<body>
+<form name="f1">
+User Name:<input type="text" name="t1"><br>
+<input type="button" value="Blinking Text" onClick="change()">
+</form>
+</body>
+</html>

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>table</title>
+</head>
+<body>
+<center><h3>Student Information</h3></center>
+<form name="form" action="table.php" method="post">
+	<table border="5" align="center">
+	 <tr>
+		<td>Roll No.<span style="color: red">*</span></td>
+		<td><input type="number" name="roll_no" id="roll_no" placeholder="ROLL NO."></td>
+	 </tr>
+
+	 <tr>
+		<td>Name<span style="color: red">*</span></td>
+		<td><input type="text" name="name" id="name" placeholder="name"></td>
+	 </tr>
+
+	 <tr>
+	 	<td>Father Name<span style="color: red">*</span></td>
+	 	<td><input type="text" name="father_name" id="father_name" placeholder="father_name"></td>
+	 </tr>
+
+	 <tr>
+	 	<td>Class<span style="color: red">*</span></td>
+	 	<td><input type="text" name="class" id="class" placeholder="class"></td>
+	 </tr>
+
+	 <tr>
+	 	<td>State<span style="color: red">*</span></td>
+	 	<td>
+	 	<select  name="state" id="state">
+		 	<option value="Andhra Pradesh">Andhra Pradesh</option>		
+		 	<option value="Arunachal Pradesh">Arunachal Pradesh</option>		
+			<option value="Assam">Assam</option>
+			<option value="bihar">Bihar</option>		
+			<option value="Chhattisgarh">Chhattisgarh</option>
+			<option value="Goa">Goa</option>		
+			<option value="Haryana">Haryana</option>
+			<option value="Himachal">Himachal</option>
+		</select>
+		</td>
+	 </tr>
+
+	 	 <tr>
+	 	<td>City<span style="color: red">*</span></td>
+	 	<td><input type="text" name="city" id="city" placeholder="city"></td>
+	 </tr>
+
+	 <tr>
+	 	<td>Gender<span style="color: red">*</span></td>
+	 	<td>
+	 	<select  name="gender" id="gender">
+		 	<option value="male">Male</option>		
+		 	<option value="female">Female</option>		
+		</select>
+		</td>
+	 </tr>
+<tr>
+	 <td colspan="2" align="center"><input type="submit"  value="SUBMIT" name="submit" id="submit"></td> 
+	</tr>	 	
+<tr>
+	 <td colspan="2" align="center"><input type="submit"  value="VIEW" name="view" id="view"></td> 
+</tr>
+
+	 
+	
+    
+	  
+	</table>
+	
+</form>	
+</body>
+</html>

@@ -1,0 +1,149 @@
+<html>
+	<head>
+		<link href="first.css" type="text/css" rel="stylesheet"/>
+		<title> Registration Page</title>
+		<script type="text/javascript">
+         function validate()
+      {
+	 var emailID = document.myForm.ea.value;
+         atpos = emailID.indexOf("@");
+         dotpos = emailID.lastIndexOf(".");
+	 //document.write(atpos);
+         if( document.myForm.fname.value == "" )
+         {
+            alert( "Please provide your first name!" );
+            //document.myForm.Name.focus() ;
+            return false;
+         }
+	  if( document.myForm.lname.value == "" )
+         {
+            alert( "Please provide your last name!" );
+            //document.myForm.Name.focus() ;
+            return false;
+         }
+         if( document.myForm.ea.value == "" )
+         {
+            alert( "Please provide your Email!" );
+           // document.myForm.EMail.focus() ;
+            return false;
+         }
+         if (atpos < 1 || ( dotpos - atpos < 2 )) 
+         {
+            alert("Please enter correct email ID")
+            document.myForm.EMail.focus() ;
+            return false;
+         }
+	 if( document.myForm.address1.value == "" )
+         {
+            alert( "Please provide your address!" );
+            //document.myForm.Name.focus() ;
+            return false;
+         }
+	 if( document.myForm.city1.value == "" )
+         {
+            alert( "Please provide your city!" );
+            //document.myForm.Name.focus() ;
+            return false;
+         }
+	 if( document.myForm.pin.value == "" ||
+         isNaN( document.myForm.pin.value ) ||
+         document.myForm.pin.value.length != 6 )
+         {
+            alert( "Please provide a pin code in the format ######." );
+            document.myForm.Zip.focus() ;
+            return false;
+         }
+         if( document.myForm.country1.value == "-1" )
+         {
+            alert( "Please provide your country!" );
+            return false;
+         }
+	if( document.myForm.zip.value == "" ||
+         isNaN( document.myForm.zip.value ) ||
+         document.myForm.zip.value.length != 5 )
+         {
+            alert( "Please provide a zip in the format #####." );
+            document.myForm.Zip.focus() ;
+            return false;
+         }
+	if( document.myForm.comment1.value == "" )
+         {
+            alert( "Please provide your comments!" );
+           // document.myForm.EMail.focus() ;
+            return false;
+         }
+         return( true );
+      }
+      </script>
+	</head>
+	<body class="a">
+		<form name="myForm" action="/cgi-bin/test.cgi" >
+		<center><B>Registration Form</B></center>
+		<p align="center">
+		<table border="1" class="b">
+			<tr>
+				<td>First name &#42;</td>
+				<td><input type="textbox" size="20" name="fname"/></td>
+			</tr>
+			<tr>
+				<td>Last name</td>
+				<td><input type="textbox" size="20" name="lname"/></td>
+			</tr>
+			<tr>
+				<td>Email address</td>
+				<td><input type="textbox" size="20" name="ea"></td>
+			</tr>
+			<tr>
+				<td>Address</td>
+				<td><input type="textbox" size="20" name="address1"></td>
+			</tr>
+			<tr>
+				<td>City</td>
+				<td><input type="textbox" size="20" name="city1"></td>
+			</tr>
+			<tr>
+				<td>Pincode</td>	
+				<td><input type="textbox" size="20" name="pin"></td>
+			</tr>
+			<tr>
+				<td>Country</td>
+				<td> <select size=1 name="country1">
+				<option>UK</option>
+				<option>USA</option>
+				<option>LANDON</option>
+				<option>CANADA</option>
+				</select></td>
+			</tr>
+			<tr>
+               			<td>Zip Code</td>
+               			<td><input type="text" name="zip" /></td>
+            		</tr>
+			<tr>
+				<td>Gender</td>
+				<td>male<input type="radio" >
+				Female<input type="radio"></td>
+			</tr>
+			<tr>
+				<td>Hobbies</td>
+				<td>Singing<input type="checkbox" name="hobbies">
+				Reading<input type="checkbox"><br>
+				Playing<input type="checkbox">
+				Dancing<input type="checkbox"></td>
+			</tr>
+
+
+			<tr>
+				<td>Comments</td>
+				<td><textarea rows="10" column="10" name="fn" name="comment1"> </textarea></td>
+			</tr>
+			<tr>
+				<td><input type="submit" value="Submit" onClick="validate()"/></td>	
+				<td><input type="Reset"></td>
+			</tr>
+
+			</table>
+			</p>
+</form>
+</body>
+</html>
+

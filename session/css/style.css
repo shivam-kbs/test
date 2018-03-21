@@ -1,0 +1,304 @@
+body
+{
+
+    margin:0;
+    padding:0;
+    background: white;
+
+}
+
+.header{
+
+	background: white;
+	width: 100%;
+	height: 60px;
+	margin-top: 10px;
+	margin-right: 40px; 
+}
+
+.navbar{
+
+	width: 1000px;
+	height: 60px;
+	float: right;
+}
+
+ul
+{
+		float:left;
+		width:auto;
+		padding:0;
+		margin:0;
+		list-style-type:none;
+	}
+	 a
+	{
+		float:left;
+		width:11.0em;
+		text-decoration:none;
+		color:steelblue;
+		background-color:white ;
+		padding:0.9em 0.7em;
+		border-right:1px solid white;
+		text-align:center;
+	}
+	a:hover{
+	   background-color:#40c0cb;
+	   height: 50px;
+
+}
+	
+	li{
+	   display:inline;
+}
+
+.logo{
+
+	width: 40px;
+	height: 30px;
+	float: right;
+	margin-right: 200px;
+}
+
+.img{
+	margin-top: 10px;
+}
+
+.gallery {
+    border: 1px solid #ccc;
+    width: 100%;
+    height: 400px;
+    margin-top: 20px;
+    font-size: 30px;
+    background-color: white;
+    margin-bottom: 40px; 
+}
+
+.text{
+
+	padding: 30px;
+	color: steelblue;
+	text-align: center;
+	font-family: gotham,"helvetica neue" helvetica,arial,sans-serif;
+}
+
+.frame{
+
+    float: left;
+	height: 250px;
+	width: 200px;
+	overflow: hidden;
+	border: 4px solid steelblue;
+	margin:20px;
+
+}
+
+.picture img{
+
+	height: 250px;
+	width: 200px;
+	padding: 5px;
+}
+
+.picture .two:hover{
+
+	transform: rotate(30deg);
+}
+
+.picture .one:hover{
+
+	transform: rotate(-30deg);
+}
+
+.picture .three:hover{
+
+	transform: rotate(-50deg);
+}
+
+.picture .four:hover{
+
+	transform: rotate(50deg);
+}
+
+
+
+* {
+    box-sizing: border-box;
+}
+.footer
+{
+background-color:white;
+height: 780px;
+margin-top: 30px;
+margin-bottom: 20px;
+}
+
+.footer h1{
+
+	text-align: center;
+	font-size: 30px;
+	color: steelblue;
+}
+.footer p{
+
+
+	text-align:center;  
+	color: steelblue;
+}
+
+form{
+
+    width: 50%;
+	margin: 20px auto;
+	color: steelblue;
+}
+
+input{
+
+    
+	padding: 10px;
+	font-size: inherit;
+}
+
+input[type="text"]{ 
+
+	display: block;
+	margin-bottom: 25px;
+	width: 100%;
+	border: 2px solid steelblue;
+	background-color: white;
+}
+
+input[type="email"]{ 
+
+	display: block;
+	margin-bottom: 25px;
+	width: 100%;
+	border: 2px solid steelblue;
+}
+
+input[type="number"]{ 
+
+	display: block;
+	margin-bottom: 25px;
+	width: 100%;
+	border: 2px solid steelblue;
+}
+
+input[type="password"]{ 
+
+	display: block;
+	margin-bottom: 25px;
+	width: 100%;
+	border: 2px solid steelblue;
+}
+
+
+input[type="radio"]{
+
+	margin: 0 8px 25px 18px;	
+}
+
+input[type="submit"]{
+
+	width: 344px;
+	height: 45px;
+	border: none;
+	background: steelblue; 
+	color: white;
+}
+
+
+input[type="reset"]{
+
+	width: 344px;
+	height: 45px;
+	border: none;
+	background: steelblue; 
+	color: white;
+	margin-top: 20px;
+}
+
+
+}
+
+input[type="submit"]:hover{
+
+	width: 344px;
+	height: 45px;
+	border: solid black;
+	background:steelblue ; 
+	color:white;
+}
+
+input[type="reset"]:hover{
+
+	width: 344px;
+	height: 45px;
+	border: solid black;
+	background:steelblue ; 
+	color:white;
+}
+
+.last{
+
+	background: steelblue;
+	width: 100%;
+	margin-top: 10px;
+	margin-bottom:40px;
+	text-align: center; 
+	color: white;
+}
+
+.story{
+	width: 100%;
+	height: 800px;
+	background-color:steelblue;
+	border: 1px solid;
+	margin-bottom: 40px;
+	margin-top: 20px;
+	text-align: center;
+}
+.story h1{
+
+	text-align: center;
+	font-size: 30px;
+	color: black;
+}
+.story p{
+
+
+	text-align:center;  
+	color: black;
+	font-size: 30px;
+}
+
+.about{
+width: 80%;
+height:500px;
+background-image: url(../images/pi7.jpg);
+margin-left: 150px;
+}
+.about h1{
+ text-align: center;
+ color: white;
+}
+.about p{
+     color: white;
+     float: right;
+     font-size: 20px;
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+

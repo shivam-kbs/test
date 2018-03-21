@@ -1,0 +1,22 @@
+<html>
+<head>
+<script type= "text/javascript">
+  function changeColor(newColor)
+ {
+    var elem = document.getElementById("d2");
+    elem.style.color = newColor;
+  }
+  </script>
+</head>
+<body>
+
+<h1>Display Date and Time</h1>
+
+<button type="button" onclick="document.getElementById('d1').innerHTML = Date()"> Date and Time</button>
+<button onclick="changeColor('blue');">Blue</button>
+<button onclick="changeColor('red');">Red</button>
+<p id="d1"></p>
+<p id="d2">Click on Blue and Red buttion to change the Color of Text</p>
+
+</body>
+</html> 
