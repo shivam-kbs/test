@@ -1,0 +1,9 @@
+{
+    "name": "jagroop/psr",
+    "description": "Test description",
+    "autoload": {
+    	"psr-4":{
+    		"App\\": "src"
+    	}
+    }
+}
